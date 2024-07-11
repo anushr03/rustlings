@@ -2,6 +2,10 @@
 #[derive(Debug)]
 enum Message {
     // TODO: Define the different variants used below.
+    Move {x: i8, y: i8},
+    Echo (String),
+    ChangeColor (i16, i16, i16),
+    Quit,
 }
 
 impl Message {
